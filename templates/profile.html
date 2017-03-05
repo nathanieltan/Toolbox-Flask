@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<h1> Profile: </h1>
+<br>
+{% if firstName and age%}
+    name: {{firstName}}
+    <br>
+    age: {{age}}
+    <br>
+    Favorite SoftDes Ninja: Patrick Huston
+
+{% else %}
+    Wow you didn't put in the information right. Try again you worthless degenerate.
+    <br>
+    <form action="/">
+            <input type="submit" value="Try Again" />
+        </form>
+{% endif %}
+
+</html>
